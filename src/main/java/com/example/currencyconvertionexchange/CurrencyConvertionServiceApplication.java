@@ -2,12 +2,14 @@ package com.example.currencyconvertionexchange;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
-public class CurrencyConvertionExchangeApplication {
+@EnableFeignClients
+public class CurrencyConvertionServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CurrencyConvertionExchangeApplication.class, args);
+		SpringApplication.run(CurrencyConvertionServiceApplication.class, args);
 	}
 
 }
